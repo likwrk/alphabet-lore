@@ -3,6 +3,7 @@
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr 1fr;
+  overflow: hidden;
 }
 
 body {
@@ -10,18 +11,19 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   background-color: #ccc;
+  margin: 0;
+  padding: 0;
 }
 
 .letter {
-  overflow: hidden;
-}
-
-.letter>div {
   animation-name: rotate;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-delay: 0;
   animation-timing-function: linear;
+}
+
+.letter>div {
   background-color: #fff;
   border-radius: 50%;
   display: block;

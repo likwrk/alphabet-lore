@@ -5,6 +5,7 @@ function init() {
     const target = e.target;
     const letter = target.getAttribute('data-letter');
     if (!letter) return;
+    console.log('target.className', target.className);
     if (target.className.indexOf('zoom-in') === -1) {
       target.classList.add('zoom-in');
       setTimeout(() => {
