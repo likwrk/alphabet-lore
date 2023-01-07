@@ -13,15 +13,15 @@ body {
 }
 
 .letter {
+  overflow: hidden;
+}
+
+.letter>div {
   animation-name: rotate;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-delay: 0;
   animation-timing-function: linear;
-  position: relative;
-}
-
-.letter>div {
   background-color: #fff;
   border-radius: 50%;
   display: block;
